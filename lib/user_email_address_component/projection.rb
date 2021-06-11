@@ -12,5 +12,9 @@ module UserEmailAddressComponent
       user_email_address.claimed_time = Clock.parse(claimed.time)
       user_email_address.sequence = claimed.sequence
     end
+
+    apply ClaimRejected do |claim_rejected|
+      user_email_address.sequence = claim_rejected.sequence
+    end
   end
 end
