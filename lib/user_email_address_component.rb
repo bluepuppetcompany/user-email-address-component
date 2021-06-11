@@ -9,3 +9,8 @@ require 'user_email_address_component/store'
 
 require 'user_email_address_component/handlers/commands'
 require 'user_email_address_component/handlers/transactions'
+
+require 'user_email_address_component/consumers/commands'
+require 'user_email_address_component/consumers/transactions'
+
+require 'user_email_address_component/start'
