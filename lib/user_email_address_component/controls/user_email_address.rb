@@ -33,6 +33,14 @@ module UserEmailAddressComponent
           user_email_address
         end
       end
+
+      module Sequence
+        def self.example
+          sequence = Controls::Sequence.example
+
+          UserEmailAddress.example(sequence: sequence)
+        end
+      end
     end
   end
 end
