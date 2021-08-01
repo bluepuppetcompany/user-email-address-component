@@ -11,7 +11,7 @@ context "Projection" do
     Projection.(user_email_address, claim_rejected)
 
     test "Sequence is set" do
-      assert(user_email_address.sequence == claim_rejected.sequence)
+      assert(user_email_address.sequence == sequence)
     end
   end
 end

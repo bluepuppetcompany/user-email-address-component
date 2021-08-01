@@ -17,15 +17,15 @@ context "Projection" do
     Projection.(user_email_address, claimed)
 
     test "Encoded Email Address is set" do
-      assert(user_email_address.encoded_email_address == claimed.encoded_email_address)
+      assert(user_email_address.encoded_email_address == encoded_email_address)
     end
 
     test "Email Address is set" do
-      assert(user_email_address.email_address == claimed.email_address)
+      assert(user_email_address.email_address == email_address)
     end
 
     test "User ID is set" do
-      assert(user_email_address.user_id == claimed.user_id)
+      assert(user_email_address.user_id == user_id)
     end
 
     test "Claimed time is converted and copied" do
@@ -35,7 +35,7 @@ context "Projection" do
     end
 
     test "Sequence is set" do
-      assert(user_email_address.sequence == claimed.sequence)
+      assert(user_email_address.sequence == sequence)
     end
   end
 end
